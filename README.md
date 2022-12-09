@@ -11,7 +11,7 @@ This repository is not finished! Don't expect to find complete and accurate info
 ### Userscript
 This userscript is being developed by us and provides a quick and easy way to access the features contained in this repo. Before clicking the link below, make sure you have a userscript manager (like Tampermonkey, Greasemonkey or Violentmonkey) installed in your browser.
 
-* [Install Userscript](https://raw.githubusercontent.com/OliverMarcusson/ChatGPT-Fun/main/userscript.js)
+* [Install Userscript](https://raw.githubusercontent.com/OliverMarcusson/ChatGPT-Fun/main/userscript.user.js)
 
 ### 0. Single prompt Jailbreak
 This prompt can often be used to 'jailbreak' ChatGPT, freeing itself from it's limitations. Note that might not behave as expected every single time, since this is an all purpose solution. To use it, simple enter this prompt at the beginning of a new thread:
