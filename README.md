@@ -1,5 +1,7 @@
-# Bypassing ChatGPT's moderation restrictions.
-This repository contains a collection of exploits for ChatGPT, a large-scale language model trained by OpenAI. These exploits can be used to manipulate the model in various ways, such as making it generate offensive or inappropriate content.
+# Having fun with ChatGPT
+This repository contains a collection of prompts and exploits for ChatGPT, a large-scale language model trained by OpenAI. These exploits can be used to manipulate the model in various ways, such as making it generate offensive or inappropriate content.
+
+Made by **F4ith2#7882** on Discord.
 
 * [Follow this link to access ChatGPT](https://chat.openai.com/chat)
 
