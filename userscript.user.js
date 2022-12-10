@@ -4,7 +4,7 @@
 // @match       *://chat.openai.com/chat
 // @grant       none
 // @version     1.0
-// @author      F4ith2#7882, compund 5816, Eclipse
+// @author      F4ith2#7882 (With the help of compound & Eclipse)
 // @run-at      document-end
 // @description 09/12/2022, 18:57:41
 // ==/UserScript==
@@ -13,6 +13,7 @@ const jailbreakUrl = 'https://raw.githubusercontent.com/OliverMarcusson/ChatGPT-
 const rpUrl = 'https://raw.githubusercontent.com/OliverMarcusson/ChatGPT-Fun/main/roleplay';
 const multiUrl = 'https://raw.githubusercontent.com/OliverMarcusson/ChatGPT-Fun/main/eclipsemultitool';
 const btns = [];
+
 const removeBtns = btns => {
     btns.forEach(btn => {
         btn.remove()
@@ -21,7 +22,9 @@ const removeBtns = btns => {
 
 window.addEventListener("load", async () => {
 
-    console.log("Script loaded.")
+    const title = document.getElementsByClassName('text-4xl font-semibold mt-[20vh] ml-auto mr-auto mb-16');
+    console.log(title);
+    // title.innerHTML += ": Enhanced";
     let btnArray;
     try {
         btnArray = document.getElementsByClassName('w-full flex gap-2 justify-center mb-3')[0];
@@ -31,7 +34,6 @@ window.addEventListener("load", async () => {
         btnArray.setAttribute("class", "w-full flex gap-2 justify-center mb-3");
         document.querySelector("main").appendChild(btnArray);
     }
-    console.log(btnArray);
     const jailbreakBtn = document.createElement("button"); // create a button element
     jailbreakBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path></svg>Jailbreak'; // set the text of the button
     jailbreakBtn.setAttribute("class", "btn flex gap-2 justify-center btn-neutral");
@@ -86,4 +88,6 @@ window.addEventListener("load", async () => {
             removeBtns(btns);
         });
     });
+
+    console.log("ChatGPT: Enhanced loaded.")
  });
